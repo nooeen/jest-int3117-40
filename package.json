@@ -1,0 +1,14 @@
+{
+  "name": "jest-int3117-40",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/nooeen/jest-int3117-40.git",
+  "author": "Duy Ngoc Nguyen <duyngoc.nguyen2001@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^29.1.2"
+  },
+  "scripts": {
+    "test": "jest"
+  }
+}
