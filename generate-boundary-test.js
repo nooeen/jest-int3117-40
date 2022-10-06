@@ -7,17 +7,10 @@ function generateBoundaryTest(test) {
     values.forEach((j) => {
       values.forEach((k) => {
         var expectedResult = "";
-        if (
-          i > 10 ||
-          i < 0 ||
-          j > 10 ||
-          j < 0 ||
-          k < 0 ||
-          k > 10
-        ) {
+        if (i > 10 || i < 0 || j > 10 || j < 0 || k < 0 || k > 10) {
           expectedResult = "Invalid";
         } else if (i < 1 || j < 1 || k < 1) {
-          expectedResult =  "Fail";
+          expectedResult = "Fail";
         } else if (i + j + k >= 28) {
           expectedResult = "Scholar";
         } else if (i + j + k >= 25) {
@@ -31,7 +24,7 @@ function generateBoundaryTest(test) {
         } else {
           expectedResult = "Fail";
         }
-        test(`Math: ${i}, Literature: ${j}, English: ${k} => ${expectedResult}`, () => {
+        test(`${i}, ${j}, ${k}, ${expectedResult}`, () => {
           expect(calculateStudentResult(i, j, k)).toBe(expectedResult);
         });
       });
