@@ -41,7 +41,7 @@ function generateEquivalentTest(test) {
     expect(calculateStudentResult(0.5, 10, 10)).toBe("Fail");
   });
 
-  test("8, 0, 0, Failed", () => {
+  test("8, 0, 0, Fail", () => {
     expect(calculateStudentResult(8, 0, 0)).toBe("Fail");
   });
 
